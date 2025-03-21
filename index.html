@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Validering</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form id="userForm">
+            <h1>Brugerinformation</h1>
+            
+            <div class="form-group">
+                <label for="firstname">Fornavn</label>
+                <input type="text" id="firstname" placeholder="Indtast fornavn">
+            </div>
+            
+            <div class="form-group">
+                <label for="lastname">Efternavn</label>
+                <input type="text" id="lastname" placeholder="Indtast efternavn">
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Adresse</label>
+                <input type="text" id="address" placeholder="Indtast adresse">
+            </div>
+            
+            <div class="form-group">
+                <label for="zipcode">Postnummer</label>
+                <input type="text" id="zipcode" placeholder="Indtast postnummer">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Indtast email">
+            </div>
+            
+            <button type="submit">Send information</button>
+        </form>
+        
+        <div id="errorMessage" class="error-message"></div>
+        <div id="successMessage" class="success-message">Tak for informationen!</div>
+    </div>
+</body>
+</html>
